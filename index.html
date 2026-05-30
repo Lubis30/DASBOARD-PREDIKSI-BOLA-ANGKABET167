@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Prediksi Bola - ANGKABET Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@400;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        /* ===== KEYFRAMES ===== */
+        @keyframes rgbBorder {
+            0%   { border-color:#ff0000; box-shadow:0 0 22px 5px #ff0000,0 0 50px 10px #ff000033; }
+            12%  { border-color:#ff7700; box-shadow:0 0 22px 5px #ff7700,0 0 50px 10px #ff770033; }
+            24%  { border-color:#ffff00; box-shadow:0 0 22px 5px #ffff00,0 0 50px 10px #ffff0033; }
+            36%  { border-color:#00ff00; box-shadow:0 0 22px 5px #00ff00,0 0 50px 10px #00ff0033; }
+            48%  { border-color:#00ffff; box-shadow:0 0 22px 5px #00ffff,0 0 50px 10px #00ffff33; }
+            60%  { border-color:#0077ff; box-shadow:0 0 22px 5px #0077ff,0 0 50px 10px #0077ff33; }
+            72%  { border-color:#aa00ff; box-shadow:0 0 22px 5px #aa00ff,0 0 50px 10px #aa00ff33; }
+            84%  { border-color:#ff00ff; box-shadow:0 0 22px 5px #ff00ff,0 0 50px 10px #ff00ff33; }
+            100% { border-color:#ff0000; box-shadow:0 0 22px 5px #ff0000,0 0 50px 10px #ff000033; }
+        }
+        @keyframes rgbText {
+            0%   { color:#ff4444; text-shadow:0 0 14px #ff0000,0 0 28px #ff000066; }
+            16%  { color:#ffff44; text-shadow:0 0 14px #ffff00,0 0 28px #ffff0066; }
+            33%  { color:#44ff88; text-shadow:0 0 14px #00ff44,0 0 28px #00ff4466; }
+            50%  { color:#44ffff; text-shadow:0 0 14px #00ffff,0 0 28px #00ffff66; }
+            66%  { color:#4488ff; text-shadow:0 0 14px #0055ff,0 0 28px #0055ff66; }
+            83%  { color:#ff44ff; text-shadow:0 0 14px #ff00ff,0 0 28px #ff00ff66; }
+            100% { color:#ff4444; text-shadow:0 0 14px #ff0000,0 0 28px #ff000066; }
+        }
+        @keyframes rgbGlow {
+            0%   { box-shadow:0 0 40px 10px #ff000088,0 0 80px 20px #ff000033,inset 0 0 30px #ff000011; }
+            25%  { box-shadow:0 0 40px 10px #ffff0088,0 0 80px 20px #ffff0033,inset 0 0 30px #ffff0011; }
+            50%  { box-shadow:0 0 40px 10px #00ffff88,0 0 80px 20px #00ffff33,inset 0 0 30px #00ffff11; }
+            75%  { box-shadow:0 0 40px 10px #ff00ff88,0 0 80px 20px #ff00ff33,inset 0 0 30px #ff00ff11; }
+            100% { box-shadow:0 0 40px 10px #ff000088,0 0 80px 20px #ff000033,inset 0 0 30px #ff000011; }
+        }
+        @keyframes rgbLine {
+            0%   { background:linear-gradient(90deg,#ff0000,#ff7700,#ffff00,#00ff00,#00ffff,#0077ff,#aa00ff,#ff00ff,#ff0000); }
+            50%  { background:linear-gradient(90deg,#ff00ff,#aa00ff,#0077ff,#00ffff,#00ff00,#ffff00,#ff7700,#ff0000,#ff00ff); }
+            100% { background:linear-gradient(90deg,#ff0000,#ff7700,#ffff00,#00ff00,#00ffff,#0077ff,#aa00ff,#ff00ff,#ff0000); }
+        }
+        @keyframes shimmer {
+            0%   { background-position:-300% center; }
+            100% { background-position:300% center; }
+        }
+        @keyframes floatParticle {
+            0%,100% { transform:translateY(0) translateX(0) scale(1); opacity:0.15; }
+            33%      { transform:translateY(-60px) translateX(25px) scale(1.3); opacity:0.5; }
+            66%      { transform:translateY(-30px) translateX(-20px) scale(0.8); opacity:0.3; }
+        }
+        @keyframes rotateBg {
+            0%   { transform:rotate(0deg) scale(1.1); }
+            100% { transform:rotate(360deg) scale(1.1); }
+        }
+        @keyframes pulseLogo {
+            0%,100% { opacity:0.06; transform:scale(1) translate(-50%,-50%); filter:blur(18px) drop-shadow(0 0 40px #ff0000); }
+            50%      { opacity:0.13; transform:scale(1.07) translate(-47%,-47%); filter:blur(14px) drop-shadow(0 0 80px #ff4400); }
+        }
+        @keyframes float3d {
+            0%,100% { transform:translateY(0) rotateX(0deg); }
+            50%      { transform:translateY(-10px) rotateX(3deg); }
+        }
+        @keyframes rgbBorderHero {
+            0%   { border-color:#ff0000; }
+            14%  { border-color:#ff7700; }
+            28%  { border-color:#ffff00; }
+            42%  { border-color:#00ff00; }
+            56%  { border-color:#00ffff; }
+            70%  { border-color:#8800ff; }
+            84%  { border-color:#ff00ff; }
+            100% { border-color:#ff0000; }
+        }
+        @keyframes marquee { 0%{transform:translateX(0)}100%{transform:translateX(-100%)} }
+        @keyframes scanline {
+            0%   { top:-10%; }
+            100% { top:110%; }
+        }
+        @keyframes gridMove {
+            0%   { background-position:0 0; }
+            100% { background-position:60px 60px; }
+        }
+        @keyframes depthPulse {
+            0%,100% { box-shadow:0 8px 32px #00000088,0 2px 0 #ff000044,0 -2px 0 #00000066,inset 0 1px 0 #ffffff22; }
+            50%      { box-shadow:0 16px 48px #000000aa,0 4px 0 #ff000066,0 -4px 0 #00000088,inset 0 1px 0 #ffffff33; }
+        }
+
+        /* ===== BODY & BG ===== */
+        body {
+            background: #1a0000;
+            font-family: 'Poppins', sans-serif;
+            color: #f0f0f0;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Deep red 3D layered background */
+        .bg-layer {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        /* Base gradient */
+        .bg-layer::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 50% 0%,   #8b0000 0%, transparent 65%),
+                radial-gradient(ellipse 60% 40% at 10% 100%, #6b0000 0%, transparent 60%),
+                radial-gradient(ellipse 50% 50% at 90% 80%,  #a00000 0%, transparent 55%),
+                radial-gradient(ellipse 100% 100% at 50% 50%, #2d0000 0%, #0d0000 70%, #000000 100%);
+            animation: rotateBg 40s linear infinite;
+        }
+        /* Moving grid */
+        .bg-layer::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,0,0,0.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,0,0,0.06) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: gridMove 8s linear infinite;
+        }
+        /* Scanline effect */
+        .scanline {
+            position: fixed;
+            left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, rgba(255,80,80,0.12), rgba(255,200,200,0.18), rgba(255,80,80,0.12), transparent);
+            z-index: 1;
+            pointer-events: none;
+            animation: scanline 6s linear infinite;
+        }
+        /* Giant logo watermark */
+        .logo-watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 70vmin;
+            height: 70vmin;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            pointer-events: none;
+            background: url('https://angkabet90.com/resources/images/logo.png') center/contain no-repeat;
+            opacity: 0.07;
+            filter: blur(16px) drop-shadow(0 0 60px #ff0000) saturate(2);
+            animation: pulseLogo 5s ease-in-out infinite;
+        }
+        /* Second sharper logo ghost */
+        .logo-watermark-sharp {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 40vmin;
+            height: 40vmin;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            pointer-events: none;
+            background: url('https://angkabet90.com/resources/images/logo.png') center/contain no-repeat;
+            opacity: 0.03;
+            filter: blur(4px) drop-shadow(0 0 20px #ff6600);
+        }
+
+        /* Particles */
+        .particles-prediksi {
+            position: fixed;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .particle-prediksi {
+            position: absolute;
+            border-radius: 50%;
+            animation: floatParticle 14s infinite ease-in-out;
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .main-content {
+            min-height: 100vh;
+            padding: 30px 20px 70px;
+            position: relative;
+            z-index: 2;
+        }
+        .prediksi-modern {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* ===== HERO ===== */
+        .hero-prediksi {
+            background: linear-gradient(135deg,
+                rgba(120,0,0,0.85) 0%,
+                rgba(60,0,0,0.92) 40%,
+                rgba(90,0,0,0.88) 70%,
+                rgba(40,0,0,0.95) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 32px;
+            padding: 38px 34px 32px;
+            text-align: center;
+            border: 3px solid #ff0000;
+            margin-bottom: 28px;
+            position: relative;
+            overflow: hidden;
+            animation: rgbBorder 4s linear infinite, depthPulse 3s ease-in-out infinite;
+            /* 3D depth effect */
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        /* Inner glow overlay */
+        .hero-prediksi::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255,80,0,0.18) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 30% at 50% 100%, rgba(200,0,0,0.25) 0%, transparent 60%);
+            border-radius: 30px;
+            pointer-events: none;
+        }
+        /* Bottom shine line */
+        .hero-prediksi::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 10%; right: 10%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,150,100,0.6), transparent);
+        }
+        .rgb-corner {
+            position: absolute;
+            width: 36px; height: 36px;
+            border-radius: 4px;
+            z-index: 3;
+        }
+        .rgb-corner.tl { top:10px; left:10px; border-top:3px solid; border-left:3px solid; animation:rgbBorderHero 3s linear infinite; }
+        .rgb-corner.tr { top:10px; right:10px; border-top:3px solid; border-right:3px solid; animation:rgbBorderHero 3s linear infinite 0.75s; }
+        .rgb-corner.bl { bottom:10px; left:10px; border-bottom:3px solid; border-left:3px solid; animation:rgbBorderHero 3s linear infinite 1.5s; }
+        .rgb-corner.br { bottom:10px; right:10px; border-bottom:3px solid; border-right:3px solid; animation:rgbBorderHero 3s linear infinite 2.25s; }
+
+        /* 3D Logo in hero */
+        .hero-logo-wrap {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 16px;
+            animation: float3d 4s ease-in-out infinite;
+        }
+        .hero-logo-wrap img {
+            max-width: 260px;
+            position: relative;
+            z-index: 2;
+            filter:
+                drop-shadow(0 0 30px #ff0000)
+                drop-shadow(0 0 60px #ff000066)
+                drop-shadow(0 12px 24px #00000088)
+                drop-shadow(0 -2px 0 rgba(255,180,100,0.4));
+        }
+        /* Logo 3D shadow floor */
+        .hero-logo-wrap::after {
+            content: '';
+            position: absolute;
+            bottom: -18px; left: 10%; right: 10%;
+            height: 20px;
+            background: radial-gradient(ellipse, rgba(255,0,0,0.5) 0%, transparent 70%);
+            filter: blur(8px);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .hero-prediksi h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 2.1rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #fff8f0 0%, #ffddcc 20%, #ff6600 50%, #ffcc00 75%, #fff8f0 100%);
+            background-size: 300% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shimmer 3s linear infinite;
+            letter-spacing: 3px;
+            text-shadow: none;
+            position: relative;
+            z-index: 2;
+            /* 3D text depth */
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.8)) drop-shadow(0 0 20px rgba(255,100,0,0.4));
+        }
+        .hero-prediksi p {
+            font-size: 0.88rem;
+            animation: rgbText 4s linear infinite;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-top: 6px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ===== RGB DIVIDER ===== */
+        .rgb-divider {
+            height: 4px;
+            border-radius: 4px;
+            margin-bottom: 26px;
+            animation: rgbLine 2s linear infinite;
+            box-shadow: 0 0 12px rgba(255,100,0,0.5);
+        }
+
+        /* ===== DATE CARD ===== */
+        .auto-date-card {
+            background: linear-gradient(135deg, rgba(100,0,0,0.82), rgba(50,0,0,0.90));
+            backdrop-filter: blur(16px);
+            border-radius: 20px;
+            padding: 18px 22px;
+            text-align: center;
+            border: 2px solid #ff0000;
+            margin-bottom: 26px;
+            position: relative;
+            animation: rgbBorder 5s linear infinite;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,150,100,0.2);
+        }
+        .auto-date-card strong {
+            animation: rgbText 4s linear infinite;
+            letter-spacing: 2px;
+            font-size: 0.88rem;
+        }
+        .date-display {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.2rem;
+            font-weight: 700;
+            animation: rgbText 3s linear infinite;
+            margin-top: 6px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
+        }
+
+        /* ===== GENERATOR GRID ===== */
+        .generator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+            margin-bottom: 28px;
+        }
+        .generator-card {
+            background: linear-gradient(145deg, rgba(110,0,0,0.80), rgba(45,0,0,0.92));
+            backdrop-filter: blur(18px);
+            border-radius: 26px;
+            border: 2px solid #ff0000;
+            overflow: hidden;
+            animation: rgbBorder 4s linear infinite;
+            box-shadow:
+                0 10px 40px rgba(0,0,0,0.7),
+                0 2px 0 rgba(255,100,50,0.3),
+                inset 0 1px 0 rgba(255,150,100,0.15);
+            /* 3D card effect */
+            transform: perspective(800px) rotateX(1deg);
+            transition: transform 0.3s;
+        }
+        .generator-card:hover {
+            transform: perspective(800px) rotateX(0deg) translateY(-3px);
+        }
+        .generator-card:nth-child(2) { animation: rgbBorder 4s linear infinite 1.2s; }
+
+        .card-header {
+            background: linear-gradient(135deg, rgba(180,0,0,0.4), rgba(100,0,0,0.25));
+            padding: 15px 20px;
+            border-bottom: 2px solid transparent;
+            border-image: linear-gradient(90deg,#ff0000,#ffff00,#00ff00,#00ffff,#ff00ff,#ff0000) 1;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .card-header .title {
+            font-weight: 700;
+            animation: rgbText 4s linear infinite;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.93rem;
+        }
+        .stats-bar {
+            display: flex;
+            gap: 14px;
+            background: rgba(0,0,0,0.5);
+            padding: 5px 14px;
+            border-radius: 40px;
+            border: 1px solid rgba(255,0,0,0.3);
+        }
+        .stat-item { text-align: center; }
+        .stat-label { font-size: 0.62rem; color: #ffaaaa; }
+        .stat-value {
+            font-family: 'Orbitron', monospace;
+            font-weight: 700;
+            animation: rgbText 3s linear infinite;
+            font-size: 0.9rem;
+        }
+        .card-body { padding: 20px; }
+        textarea.input-prediksi {
+            width: 100%;
+            min-height: 300px;
+            padding: 14px;
+            background: rgba(0,0,0,0.65);
+            border: 1.5px solid rgba(255,0,0,0.35);
+            border-radius: 14px;
+            color: #ffe8e8;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            resize: vertical;
+            transition: all 0.3s;
+        }
+        textarea.input-prediksi:focus {
+            outline: none;
+            border-color: #ff4400;
+            box-shadow: 0 0 16px rgba(255,68,0,0.5), inset 0 0 10px rgba(255,0,0,0.05);
+        }
+        textarea.input-prediksi::placeholder { color: #aa6666; }
+        .output-code {
+            background: rgba(0,0,0,0.7);
+            border: 1.5px solid rgba(255,0,0,0.3);
+            border-radius: 14px;
+            padding: 14px;
+            min-height: 300px;
+            max-height: 300px;
+            overflow: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            white-space: pre-wrap;
+            word-break: break-all;
+            color: #44ff88;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+        }
+        .btn-group { display:flex; gap:12px; margin-top:16px; }
+        .btn-custom {
+            flex: 1;
+            padding: 12px;
+            border-radius: 40px;
+            font-weight: 700;
+            border: 2px solid #ff0000;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: linear-gradient(135deg, rgba(120,0,0,0.6), rgba(60,0,0,0.8));
+            color: #ffaaaa;
+            font-size: 0.82rem;
+            letter-spacing: 0.5px;
+            animation: rgbBorder 4s linear infinite;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,100,100,0.2);
+        }
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #cc0000, #ff6600);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255,0,0,0.5), 0 0 20px rgba(255,100,0,0.3);
+        }
+
+        /* ===== PREVIEW SECTION ===== */
+        .preview-section {
+            background: linear-gradient(145deg, rgba(110,0,0,0.82), rgba(40,0,0,0.95));
+            backdrop-filter: blur(20px);
+            border-radius: 28px;
+            border: 3px solid #ff0000;
+            margin-bottom: 30px;
+            overflow: hidden;
+            animation: rgbBorder 4s linear infinite 2s;
+            box-shadow:
+                0 16px 60px rgba(0,0,0,0.8),
+                0 2px 0 rgba(255,100,50,0.3),
+                inset 0 1px 0 rgba(255,150,100,0.12);
+        }
+        .preview-rgb-stripe {
+            height: 5px;
+            width: 100%;
+            animation: rgbLine 1.8s linear infinite;
+            box-shadow: 0 0 10px rgba(255,100,0,0.4);
+        }
+        .preview-header {
+            padding: 24px 20px 18px;
+            text-align: center;
+            border-bottom: 2px solid transparent;
+            border-image: linear-gradient(90deg,#ff0000,#ff7700,#ffff00,#00ff00,#00ffff,#0077ff,#ff00ff,#ff0000) 1;
+            position: relative;
+            background: linear-gradient(180deg, rgba(160,0,0,0.3) 0%, transparent 100%);
+        }
+        /* Preview header logo with 3D effect */
+        .preview-logo-wrap {
+            display: inline-block;
+            position: relative;
+            animation: float3d 4.5s ease-in-out infinite;
+            margin-bottom: 8px;
+        }
+        .preview-logo-wrap img {
+            max-width: 200px;
+            filter:
+                drop-shadow(0 0 25px #ff0000)
+                drop-shadow(0 0 50px rgba(255,0,0,0.4))
+                drop-shadow(0 10px 20px rgba(0,0,0,0.7));
+        }
+        .preview-logo-wrap::after {
+            content: '';
+            position: absolute;
+            bottom: -12px; left: 15%; right: 15%;
+            height: 14px;
+            background: radial-gradient(ellipse, rgba(255,0,0,0.4) 0%, transparent 70%);
+            filter: blur(6px);
+        }
+        .preview-header h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.25rem;
+            animation: rgbText 3s linear infinite;
+            font-weight: 900;
+            letter-spacing: 4px;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.8));
+        }
+        .preview-date { font-size: 0.8rem; color: #ffaaaa; margin-top: 4px; }
+
+        .preview-marquee {
+            padding: 13px;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            background: linear-gradient(90deg, rgba(80,0,0,0.8), rgba(120,0,0,0.6), rgba(80,0,0,0.8));
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            border-image: linear-gradient(90deg,#ff0000,#ff7700,#ffff00,#00ff00,#00ffff,#0077ff,#ff00ff,#ff0000) 1;
+        }
+        .preview-marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            font-weight: 700;
+            font-size: 0.88rem;
+            animation: rgbText 3s linear infinite, marquee 38s linear infinite;
+        }
+        .preview-content {
+            padding: 20px;
+            max-height: 540px;
+            overflow-y: auto;
+        }
+        .preview-content::-webkit-scrollbar { width: 6px; }
+        .preview-content::-webkit-scrollbar-track { background: rgba(0,0,0,0.3); }
+        .preview-content::-webkit-scrollbar-thumb { background: #cc0000; border-radius: 3px; }
+
+        .league-filter-wrap { margin-bottom: 16px; }
+        .league-select {
+            width: 100%;
+            padding: 11px 16px;
+            background: rgba(0,0,0,0.6);
+            border: 2px solid #ff0000;
+            border-radius: 40px;
+            color: #ffaaaa;
+            font-weight: 700;
+            cursor: pointer;
+            animation: rgbBorder 4s linear infinite;
+            outline: none;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+        }
+        .prev-league-block {
+            margin-bottom: 18px;
+            border: 2px solid #ff0000;
+            border-radius: 16px;
+            overflow: hidden;
+            animation: rgbBorder 4s linear infinite;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.6), 0 2px 0 rgba(255,100,50,0.2);
+        }
+        .prev-league-crown {
+            background: linear-gradient(135deg, rgba(160,0,0,0.9), rgba(80,0,0,0.95));
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid transparent;
+            border-image: linear-gradient(90deg,#ff0000,#ffff00,#00ff00,#00ffff,#ff00ff,#ff0000) 1;
+        }
+        .prev-crown-name {
+            font-weight: 800;
+            animation: rgbText 3s linear infinite;
+            font-size: 0.86rem;
+            letter-spacing: 1px;
+            filter: drop-shadow(0 1px 4px rgba(0,0,0,0.8));
+        }
+        .prev-match-card {
+            display: flex;
+            align-items: center;
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(255,0,0,0.1);
+            transition: all 0.25s;
+            background: rgba(40,0,0,0.4);
+        }
+        .prev-match-card:hover {
+            background: rgba(160,0,0,0.25);
+            transform: translateX(3px);
+        }
+        .prev-match-card:last-child { border-bottom: none; }
+        .team-side { flex:1; display:flex; align-items:center; gap:8px; }
+        .team-side.right { flex-direction:row-reverse; }
+        .team-logo-preview {
+            width: 34px; height: 34px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px rgba(255,100,0,0.5)) drop-shadow(0 2px 4px rgba(0,0,0,0.6));
+            border-radius: 50%;
+        }
+        .team-name { font-size: 0.74rem; font-weight: 600; color: #ffe8e8; }
+        .score-center { width: 82px; text-align: center; }
+        .score-num {
+            font-family: 'Orbitron', monospace;
+            font-weight: 800;
+            animation: rgbText 3s linear infinite;
+            font-size: 1.05rem;
+            filter: drop-shadow(0 1px 3px rgba(0,0,0,0.8));
+        }
+        .match-dt { font-size: 0.61rem; color: #cc8888; margin-top: 2px; }
+        .preview-empty { text-align:center; padding:50px; color:#aa6666; font-size:0.9rem; }
+
+        /* ===== NOTIFICATION ===== */
+        .notification {
+            position: fixed;
+            bottom: 24px; right: 24px;
+            background: linear-gradient(135deg, #aa0000, #ff4400, #ff6600);
+            color: #fff;
+            padding: 13px 26px;
+            border-radius: 40px;
+            z-index: 10000;
+            font-weight: bold;
+            box-shadow: 0 8px 32px rgba(200,0,0,0.6), 0 0 40px rgba(255,100,0,0.3);
+            border: 2px solid #ff0000;
+            animation: rgbBorder 3s linear infinite;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .generator-grid { grid-template-columns:1fr; }
+            .hero-prediksi h1 { font-size:1.35rem; }
+            .hero-logo-wrap img { max-width:180px; }
+            .team-name { font-size:0.63rem; }
+            .score-center { width:58px; }
+            .team-logo-preview { width:26px; height:26px; }
+            .generator-card { transform:none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- BG LAYERS -->
+<div class="bg-layer"></div>
+<div class="scanline"></div>
+<div class="logo-watermark"></div>
+<div class="logo-watermark-sharp"></div>
+<div class="particles-prediksi" id="particlesPrediksi"></div>
+
+<div class="main-content">
+    <div class="prediksi-modern">
+
+        <!-- HERO -->
+        <div class="hero-prediksi">
+            <div class="rgb-corner tl"></div>
+            <div class="rgb-corner tr"></div>
+            <div class="rgb-corner bl"></div>
+            <div class="rgb-corner br"></div>
+            <div class="hero-logo-wrap">
+                <img src="https://angkabet90.com/resources/images/logo.png"
+                     onerror="this.style.display='none';document.getElementById('fallback-hero').style.display='block';"
+                     alt="ANGKABET Logo">
+                <div id="fallback-hero" style="display:none;font-family:'Orbitron',monospace;font-size:2.4rem;font-weight:900;background:linear-gradient(135deg,#fff,#ff3300,#ffcc00,#fff);background-size:300% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 3s linear infinite;letter-spacing:5px;filter:drop-shadow(0 0 15px #cc0000);">ANGKABET</div>
+            </div>
+            <h1>ANGKABET GENERATOR</h1>
+            <p>⚡ Mr.L Top Edition — Auto Team Logo ⚡</p>
+        </div>
+
+        <div class="rgb-divider"></div>
+
+        <!-- DATE -->
+        <div class="auto-date-card">
+            <strong>📅 TANGGAL OTOMATIS</strong>
+            <div class="date-display" id="autoDate">Memuat...</div>
+        </div>
+
+        <div class="rgb-divider"></div>
+
+        <!-- GENERATOR GRID -->
+        <div class="generator-grid">
+            <div class="generator-card">
+                <div class="card-header">
+                    <div class="title"><i class="fas fa-edit"></i> INPUT PREDIKSI</div>
+                    <div class="stats-bar">
+                        <div class="stat-item"><div class="stat-label">Liga</div><div class="stat-value" id="totalLeagues">0</div></div>
+                        <div class="stat-item"><div class="stat-label">Match</div><div class="stat-value" id="totalMatches">0</div></div>
+                        <div class="stat-item"><div class="stat-label">Logo ✓</div><div class="stat-value" id="totalLogos">0</div></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <textarea id="inputText" class="input-prediksi" placeholder="Masukkan prediksi di sini — semua format terbaca otomatis:
+
+CONTOH FORMAT:
+ENGLISH PREMIER LEAGUE
+17/04 21:00 WIB Brentford VS Fulham 2 : 1
+17/04 23:30 WIB Leeds United VS Wolverhampton 1 : 1"></textarea>
+                    <div class="btn-group">
+                        <button class="btn-custom" id="clearBtn"><i class="fas fa-trash-alt"></i> Clear Semua</button>
+                        <button class="btn-custom" id="refreshLogoBtn"><i class="fas fa-sync-alt"></i> Refresh Logo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="generator-card">
+                <div class="card-header">
+                    <div class="title"><i class="fas fa-code"></i> OUTPUT HTML + PREVIEW</div>
+                </div>
+                <div class="card-body">
+                    <div class="output-code" id="outputCode">Script HTML lengkap akan muncul di sini secara otomatis...</div>
+                    <div class="btn-group">
+                        <button class="btn-custom" id="copyBtn"><i class="fas fa-copy"></i> Copy Script HTML</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PREVIEW SECTION -->
+        <div class="preview-section">
+            <div class="preview-rgb-stripe"></div>
+            <div class="preview-header">
+                <div class="preview-logo-wrap">
+                    <img src="https://angkabet90.com/resources/images/logo.png"
+                         onerror="this.style.display='none';document.getElementById('fallback-prev').style.display='block';"
+                         alt="ANGKABET">
+                    <div id="fallback-prev" style="display:none;font-family:'Orbitron',monospace;font-size:1.8rem;font-weight:900;background:linear-gradient(135deg,#fff,#ff3300,#ffcc00,#fff);background-size:300% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 3s linear infinite;letter-spacing:4px;">ANGKABET</div>
+                </div>
+                <h3>ANGKABET</h3>
+                <div class="preview-date" id="previewDate">-</div>
+            </div>
+            <div class="preview-marquee">
+                <span>⚽️ PREDIKSI BOLA TERUPDATE ! Tunggu apa lagi? Daftar di ANGKABET dan nikmati pengalaman taruhan yang seru dengan peluang besar! ⚽️ &nbsp;&nbsp;&nbsp;&nbsp; ⚽️ PREDIKSI BOLA TERUPDATE ! Tunggu apa lagi? Daftar di ANGKABET dan nikmati pengalaman taruhan yang seru dengan peluang besar! ⚽️</span>
+            </div>
+            <div class="preview-rgb-stripe"></div>
+            <div class="preview-content">
+                <div class="league-filter-wrap" id="leagueFilterWrap" style="display:none;">
+                    <select class="league-select" id="leagueSelect" onchange="filterLeaguePreview(this.value)">
+                        <option value="all">🏆 Semua Liga</option>
+                    </select>
+                </div>
+                <div id="previewTables"></div>
+                <div class="preview-empty" id="previewEmpty">Preview akan muncul di sini secara otomatis setelah input data...</div>
+            </div>
+            <div class="preview-rgb-stripe"></div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+const SITE_CONFIG = {
+    name: 'ANGKABET',
+    logo: 'https://angkabet90.com/resources/images/logo.png',
+    marquee: '⚽️ PREDIKSI BOLA TERUPDATE ! Tunggu apa lagi? Daftar di ANGKABET dan nikmati pengalaman taruhan yang seru dengan peluang besar! ⚽️',
+};
+
+const FALLBACK_LOGOS = {
+  'crystal palace':'https://assets.football-logos.cc/logos/england/256x256/crystal-palace.53067b96.png',
+  'west ham united':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f58b0b219f9a58ee0a1496_west-ham-united-footballlogos-org.svg',
+  'brentford':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5876ba35f811cb20b28d7_brentford-footballlogos-org.svg',
+  'fulham':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f58941567204be185ff8f8_fulham-footballlogos-org.svg',
+  'leeds united':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f589d37b3e129d36bf3d83_leeds-united-footballlogos-org.svg',
+  'wolverhampton wanderers':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f58b56dfbd72754cd0ee78_wolverhampton-wanderers-footballlogos-org.svg',
+  'newcastle united':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f58a543b232752361d0d0f_newcastle-united-footballlogos-org.svg',
+  'bournemouth afc':'https://crests.football-data.org/bournemouth.png',
+  'tottenham hotspur':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f58ade8abeb45efd9e239b_tottenham-hotspur-footballlogos-org.svg',
+  'brighton & hove albion':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f587afb29d49b3350c852d_brighton-hove-footballlogos-org.svg',
+  'chelsea':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f588edfc3519b543627c40_chelsea-footballlogos-org.svg',
+  'manchester united':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f58a2606fdd830398bc400_manchester-united-footballlogos-org.svg',
+  'everton':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f58915f5a5b624ccee6b5f_everton-footballlogos-org.svg',
+  'liverpool':'https://assets.football-logos.cc/logos/england/256x256/liverpool.99c48ae3.png',
+  'nottingham forest':'https://r2.thesportsdb.com/images/media/team/badge/bk4qjs1546440351.png',
+  'burnley':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5880a33480946aa8663c4_burnley-footballlogos-org.svg',
+  'aston villa':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5871564515d34fc6e69f4_aston-villa-footballlogos-org.svg',
+  'sunderland':'https://r2.thesportsdb.com/images/media/team/badge/tprtus1448813498.png',
+  'manchester city':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f58a00d96dabb571b29589_manchester-city-footballlogos-org.svg',
+  'arsenal':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f587db0ac9b956516f0925_arsenal-footballlogos-org.svg',
+  'lecce':'https://assets.football-logos.cc/logos/italy/256x256/lecce.18baee06.png',
+  'fiorentina':'https://assets.football-logos.cc/logos/italy/256x256/fiorentina.7ba101c2.png',
+  'sassuolo':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f592425ba37a0850adca17_sassuolo-footballlogos-org.svg',
+  'udinese':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5929293bf6ab9aaad0092_udinese-footballlogos-org.svg',
+  'parma calcio':'https://crests.football-data.org/104.png',
+  'napoli':'https://r2.thesportsdb.com/images/media/team/badge/l8qyxv1742982541.png',
+  'lazio':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f591322676d1e0f79d7dff_lazio-footballlogos-org.svg',
+  'as roma':'https://crests.football-data.org/100.png',
+  'atalanta':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f590660f6204843a24dbb2_atalanta-footballlogos-org.svg',
+  'torino':'https://crests.football-data.org/586.png',
+  'hellas verona':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f590bea1330c05fdcc26e8_hellas-verona-footballlogos-org.svg',
+  'ac milan':'https://crests.football-data.org/98.png',
+  'juventus':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5911076d6a294f1b7d810_juventus-footballlogos-org.svg',
+  'bologna':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5903c98cd778cac4afe1c_bologna-footballlogos-org.svg',
+  'cagliari':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f58fb88119a89b8b5808c9_cagliari-footballlogos-org.svg',
+  'inter milan':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f590e5149e16680de7ab2f_inter-milan-footballlogos-org.svg',
+  'genoa':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5908f2f61103c8f4c5c4d_genoa-footballlogos-org.svg',
+  'real madrid':'https://r2.thesportsdb.com/images/media/team/badge/vwvwrw1473502969.png',
+  'barcelona':'https://r2.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png',
+  'atletico madrid':'https://static.flashscore.com/res/image/data/CjfjIsYg-GhHiNvXF.png',
+  'sevilla':'https://r2.thesportsdb.com/images/media/team/badge/vpsqqx1473502977.png',
+  'villarreal':'https://r2.thesportsdb.com/images/media/team/badge/vrypqy1473503073.png',
+  'real betis':'https://r2.thesportsdb.com/images/media/team/badge/2oqulv1663245386.png',
+  'athletic bilbao':'https://apiv2.allsportsapi.com/logo/7258_athletic-club.jpg',
+  'valencia':'https://assets.football-logos.cc/logos/spain/256x256/valencia.f9d9eee2.png',
+  'real sociedad':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f57cd739e52d48a094280a_real-sociedad-footballlogos-org.svg',
+  'osasuna':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f57679889b70d360e72166_osasuna-footballlogos-org.svg',
+  'getafe':'https://r2.thesportsdb.com/images/media/team/badge/eyh2891655594452.png',
+  'celta vigo':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f573ceae8839f16958ef48_celta-vigo-footballlogos-org.svg',
+  'mallorca':'https://assets.football-logos.cc/logos/spain/256x256/mallorca.d244a18a.png',
+  'rayo vallecano':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f579a9900b7b793a032ad7_rayo-vallecano-footballlogos-org.svg',
+  'alaves':'https://apiv2.allsportsapi.com/logo/7275_alaves.jpg',
+  'girona fc':'https://crests.football-data.org/298.png',
+  'paris saint germain':'https://media.api-sports.io/football/teams/85.png',
+  'marseille':'https://r2.thesportsdb.com/images/media/team/badge/uutsyt1473504764.png',
+  'lyon':'https://media.api-sports.io/football/teams/80.png',
+  'lille':'https://r2.thesportsdb.com/images/media/team/badge/2giize1534005340.png',
+  'nice':'https://r2.thesportsdb.com/images/media/team/badge/msy7ly1621593859.png',
+  'as monaco':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f601bc2d95f01cf7da34fc_as-monaco-footballlogos-org.svg',
+  'rennes':'https://assets.football-logos.cc/logos/france/256x256/rennes.6d90b3c1.png',
+  'lens':'https://r2.thesportsdb.com/images/media/team/badge/3pxoum1598797195.png',
+  'reims':'https://media.api-sports.io/football/teams/93.png',
+  'nantes':'https://assets.football-logos.cc/logos/france/256x256/nantes.92be1c98.png',
+  'brest':'https://r2.thesportsdb.com/images/media/team/badge/z69be41598797026.png',
+  'toulouse':'https://assets.football-logos.cc/logos/france/256x256/toulouse.67db8b0f.png',
+  'montpellier':'https://r2.thesportsdb.com/images/media/team/badge/8wn9x31750879448.png',
+  'strasbourg':'https://apiv2.allsportsapi.com/logo/3818_strasbourg.jpg',
+  'borussia dortmund':'https://crests.football-data.org/4.png',
+  'bayern munchen':'https://assets.football-logos.cc/logos/germany/256x256/bayern-munchen.6c38f13a.png',
+  'bayer leverkusen':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5936c1aefe1dd0d87de61_bayer-leverkusen-footballlogos-org.svg',
+  'rb leipzig':'https://crests.football-data.org/721.png',
+  'eintracht frankfurt':'https://crests.football-data.org/19.png',
+  'vfl wolfsburg':'https://crests.football-data.org/11.png',
+  'vfb stuttgart':'https://crests.football-data.org/10.png',
+  'sc freiburg':'https://crests.football-data.org/17.png',
+  'borussia monchengladbach':'https://crests.football-data.org/18.png',
+  'werder bremen':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5945713829fe52be9e2de_werder-bremen-footballlogos-org.svg',
+  'union berlin':'https://r2.thesportsdb.com/images/media/team/badge/q0o5001599679795.png',
+  'tsg hoffenheim':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f594a4889b70d360ea391c_tsg-hoffenheim-footballlogos-org.svg',
+  'fc heidenheim':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f5958aad88bd62cc1f96b2_fc-heidenheim-footballlogos-org.svg',
+  'augsburg':'https://assets.football-logos.cc/logos/germany/256x256/augsburg.2bc910e0.png',
+  'fsv mainz 05':'https://media.api-sports.io/football/teams/164.png',
+  'hamburger sv':'https://crests.football-data.org/7.png',
+  'galatasaray':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f622093480c97e1a0068c4_galatasaray-footballlogos-org.svg',
+  'fenerbahce':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f621b1519a6d65309c17fc_fenerbahce-footballlogos-org.svg',
+  'besiktas':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6233b45cd7f64e0ef5b53_besiktas-footballlogos-org.svg',
+  'trabzonspor':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6223606dd8cd2024332a2_trabzonspor-footballlogos-org.svg',
+  'ajax':'https://assets.football-logos.cc/logos/netherlands/256x256/ajax.fadc62c4.png',
+  'psv eindhoven':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6054be5c55fdabb2fdf94_psv-eindhoven-footballlogos-org.svg',
+  'feyenoord':'https://assets.football-logos.cc/logos/netherlands/256x256/feyenoord.06e393bc.png',
+  'az alkmaar':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6057cea33d7b9c801438e_az-alkmaar-footballlogos-org.svg',
+  'fc twente enschede':'https://assets.football-logos.cc/logos/netherlands/256x256/twente.6ab33058.png',
+  'anderlecht':'https://r2.thesportsdb.com/images/media/team/badge/auindn1771129464.png',
+  'club brugge':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6445fa72f2d8896f6a9d5_club-brugge-footballlogos-org.svg',
+  'krc genk':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6442e170ac4e18e9cffb5_krc-genk-footballlogos-org.svg',
+  'celtic fc':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f64bedd483457aeb512430_celtic-footballlogos-org.svg',
+  'rangers':'https://assets.football-logos.cc/logos/scotland/256x256/rangers.ce3aff23.png',
+  'porto':'https://apiv2.allsportsapi.com/logo/81_porto.jpg',
+  'benfica':'https://assets.football-logos.cc/logos/portugal/256x256/benfica.3e4d3034.png',
+  'sporting lisbon':'https://apiv2.allsportsapi.com/logo/177_sporting-cp.jpg',
+  'sporting braga':'https://apiv2.allsportsapi.com/logo/156_sporting-braga.jpg',
+  'red bull salzburg':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f7d5d729210985b3252d2f_red-bull-salzburg-footballlogos-org.svg',
+  'sk sturm graz':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f7d613a11429bc213f52b3_sk-sturm-graz-footballlogos-org.svg',
+  'dynamo kyiv':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fa9cf59b1cd252a7f4aa58_dynamo-kyiv-footballlogos-org.svg',
+  'shakhtar donetsk':'https://media.api-sports.io/football/teams/550.png',
+  'zenit st. petersburg':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fa93f4caf756d703afabba_zenit-saint-petersburg-footballlogos-org.svg',
+  'spartak moscow':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fa93bc3601df92b577b94a_spartak-moscow-footballlogos-org.svg',
+  'cska moscow':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fa94ffe4056ba4187c5051_cska-moscow-footballlogos-org.svg',
+  'lokomotiv moscow':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fa953a34fffcd16faf4ca1_lokomotiv-moscow-footballlogos-org.svg',
+  'dynamo moscow':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fa935fe8e706bac55a887a_dynamo-moscow-footballlogos-org.svg',
+  'boca juniors':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f63d482fac5aeef8ce2996_boca-juniors-footballlogos-org.svg',
+  'ca river plate':'https://media.api-sports.io/football/teams/2351.png',
+  'racing club':'https://r2.thesportsdb.com/images/media/team/badge/vi4mu41695734959.png',
+  'independiente':'https://crests.football-data.org/7119.png',
+  'flamengo rj':'https://crests.football-data.org/1783.png',
+  'palmeiras sp':'https://crests.football-data.org/1769.png',
+  'atletico mineiro':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6182efafd1f89bdf428a7_atletico-mineiro-footballlogos-org.svg',
+  'fluminense rj':'https://crests.football-data.org/1765.png',
+  'botafogo rj':'https://assets.football-logos.cc/logos/brazil/256x256/botafogo.e439f7a4.png',
+  'sao paulo':'https://assets.football-logos.cc/logos/brazil/256x256/sao-paulo.468eaeb3.png',
+  'corinthians sp':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f61695338867d6704b4f08_corinthians-footballlogos-org.svg',
+  'vasco da gama rj':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6163df059b0250925153a_vasco-de-gama-footballlogos-org.svg',
+  'santos':'https://assets.football-logos.cc/logos/brazil/256x256/santos.5ea20e58.png',
+  'cruzeiro mg':'https://crests.football-data.org/1771.png',
+  'persib bandung':'https://r2.thesportsdb.com/images/media/team/badge/yicyke1733590181.png',
+  'arema fc':'https://media.api-sports.io/football/teams/2438.png',
+  'persija jakarta':'https://r2.thesportsdb.com/images/media/team/badge/28cbvp1752706637.png',
+  'persebaya surabaya':'https://r2.thesportsdb.com/images/media/team/badge/pjkury1583008690.png',
+  'bali united':'https://assets.football-logos.cc/logos/indonesia/256x256/bali-united.cdf7d1a2.png',
+  'psm makassar':'https://r2.thesportsdb.com/images/media/team/badge/q312y81583010685.png',
+  'borneo fc samarinda':'https://r2.thesportsdb.com/images/media/team/badge/61ii8h1661354521.png',
+  'los angeles fc':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f61b3c84504bbe10c43e00_los-angeles-fc-footballlogos-org.svg',
+  'inter miami cf':'https://assets.football-logos.cc/logos/usa/256x256/inter-miami-cf.e2a16c34.png',
+  'seattle sounders':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f61bca29b7dca6b0062d5d_seattle-sounders-footballlogos-org.svg',
+  'toronto fc':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f620fbe75643dfaa31ad10_toronto-fc-footballlogos-org.svg',
+  'new york city fc':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f61ebdbaa2489b80d845bd_new-york-city-fc-footballlogos-org.svg',
+  'new york red bulls':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f61ee387dc80b84a80b255_new-york-red-bulls-footballlogos-org.svg',
+  'club america':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6ae196afb55b09eb207aa_club-america-footballlogos-org.svg',
+  'guadalajara chivas':'https://media.api-sports.io/football/teams/2278.png',
+  'tigres uanl':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6addd9f5b452adb93892d_tigres-uanl-footballlogos-org.svg',
+  'monterrey':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6ada20138811d116188ff_monterrey-footballlogos-org.svg',
+  'cruz azul':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6ad60d27a5557a26d91df_cruz-azul-footballlogos-org.svg',
+  'al hilal riyadh':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6cd898acd196aebaa1bb9_al-hilal-footballlogos-org.svg',
+  'al ittihad jeddah':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6cdd793b67ab02d1ca9ea_al-ittihad-footballlogos-org.svg',
+  'al nassr':'https://media.api-sports.io/football/teams/2932.png',
+  'al ahli jeddah':'https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-ahli.4a088ea9.png',
+  'al ahly cairo':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fe954d45a50554ad1c030b_al-ahly-sc-footballlogos-org.svg',
+  'zamalek':'https://r2.thesportsdb.com/images/media/team/badge/tgekj81580930027.png',
+  'young boys':'https://assets.football-logos.cc/logos/switzerland/256x256/young-boys.313bb944.png',
+  'fc zurich':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f90b4687c4eb552209bab8_fc-zurich-footballlogos-org.svg',
+  'paok':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f7cda760b601a5b2422967_paok-footballlogos-org.svg',
+  'olympiacos':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f7ce122cd059400b09ecf6_olympiacos-footballlogos-org.svg',
+  'panathinaikos':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f7ce57cd7ba62549c04e35_panathinaikos-footballlogos-org.svg',
+  'vissel kobe':'https://assets.football-logos.cc/logos/japan/256x256/vissel-kobe.02a99f8c.png',
+  'kawasaki frontale':'https://r2.thesportsdb.com/images/media/team/badge/c6pot51578239112.png',
+  'kashima antlers':'https://r2.thesportsdb.com/images/media/team/badge/2s8ady1578238881.png',
+  'urawa red diamonds':'https://r2.thesportsdb.com/images/media/team/badge/ce3lhk1578239741.png',
+  'gamba osaka':'https://assets.football-logos.cc/logos/japan/256x256/gamba-osaka.3c641b15.png',
+  'yokohama f marinos':'https://r2.thesportsdb.com/images/media/team/badge/rgeshm1578240000.png',
+  'jeonbuk hyundai motors':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f7fee64de5077d96824a19_jeonbuk-hyundai-footballlogos-org.svg',
+  'fc seoul':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f7ff7ea6c1da2fb26909f1_fc-seoul-footballlogos-org.svg',
+  'ulsan hd fc':'https://assets.football-logos.cc/logos/south-korea/256x256/ulsan-hd-fc.5bd36e8f.png',
+  'bangkok united':'https://r2.thesportsdb.com/images/media/team/badge/1jsiim1582396416.png',
+  'buriram united':'https://r2.thesportsdb.com/images/media/team/badge/ab966z1582396423.png',
+  'muangthong united':'https://r2.thesportsdb.com/images/media/team/badge/whxpf61720546395.png',
+  'bg pathum united':'https://assets.football-logos.cc/logos/thailand/256x256/bg-pathum-united.c5d9df89.png',
+  'beijing guoan':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f8035b1d595ae61cf2de6d_beijing-guoan-footballlogos-org.svg',
+  'shanghai shenhua':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f80711e758c4b6d360a7c0_shanghai-shenshua-footballlogos-org.svg',
+  'shandong taishan':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f803093c9f3bad7412e6b8_shandong-taishan-footballlogos-org.svg',
+  'mamelodi sundowns':'https://r2.thesportsdb.com/images/media/team/badge/uswgw01642709783.png',
+  'kaizer chiefs':'https://media.api-sports.io/football/teams/2691.png',
+  'orlando pirates':'https://media.api-sports.io/football/teams/2700.png',
+  'bodo glimt':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f7945aedd4498dec8ae439_bodo-glimt-footballlogos-org.svg',
+  'rosenborg':'https://r2.thesportsdb.com/images/media/team/badge/z483ps1764866361.png',
+  'brann':'https://r2.thesportsdb.com/images/media/team/badge/ovuad71690695412.png',
+  'valerenga':'https://assets.football-logos.cc/logos/norway/256x256/valerenga.4d61dd7f.png',
+  'malmo':'https://assets.football-logos.cc/logos/sweden/256x256/malmo.87b9acb3.png',
+  'hammarby':'https://r2.thesportsdb.com/images/media/team/badge/3kgg5b1592144695.png',
+  'djurgardens':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f910d97b27d7cd48b5de75_djurgardens-if-footballlogos-org.svg',
+  'ifk goteborg':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f913d0a34009cafd0e5122_ifk-goteborg-footballlogos-org.svg',
+  'ludogorets razgrad':'https://apiv2.allsportsapi.com/logo/119_ludogorets-razgrad.jpg',
+  'crvena zvezda':'https://r2.thesportsdb.com/images/media/team/badge/gz650v1567023440.png',
+  'partizan belgrade':'https://r2.thesportsdb.com/images/media/team/badge/uzb0cf1503235068.png',
+  'fc copenhagen':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f811bb9f1e00aa1cea29d6_fc-copenhagen-footballlogos-org.svg',
+  'brondby if':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f8125bfab32212f005492d_brondby-if-footballlogos-org.svg',
+  'midtjylland':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f81218426326700a8b44e7_fc-midtjylland-footballlogos-org.svg',
+  'hjk helsinki':'https://www.thesportsdb.com/images/media/team/badge/z43x021775498790.png',
+  'olimpia asuncion':'https://assets.football-logos.cc/logos/paraguay/256x256/olimpia.86d1d5e2.png',
+  'libertad':'https://assets.football-logos.cc/logos/paraguay/256x256/libertad.c2fa5a37.png',
+  'penarol':'https://assets.football-logos.cc/logos/uruguay/256x256/penarol.d0602fb6.png',
+  'nacional montevideo':'https://r2.thesportsdb.com/images/media/team/badge/yxi2wi1736387630.png',
+  'sporting cristal':'https://assets.football-logos.cc/logos/peru/256x256/sporting-cristal.7afad984.png',
+  'alianza lima':'https://media.api-sports.io/football/teams/2553.png',
+  'universitario deportes':'https://static.flashscore.com/res/image/data/QNQhOVBr-pzbJPTLS.png',
+  'ldu quito':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fe637ddd4e306dd57a5088_ldu-quito-footballlogos-org.svg',
+  'independiente del valle':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fe646d5ad6bebbd115f847_independiente-del-valle-footballlogos-org.svg',
+  'colo colo':'https://assets.football-logos.cc/logos/chile/256x256/colo-colo.b39e2300.png',
+  'universidad de chile':'https://assets.football-logos.cc/logos/chile/256x256/universidad-de-chile.636d25b7.png',
+  'atletico nacional':'https://assets.football-logos.cc/logos/colombia/256x256/atletico-nacional.4ddc325f.png',
+  'millonarios':'https://assets.football-logos.cc/logos/colombia/256x256/millonarios.78c9e996.png',
+  'bolivar':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/693ac5348753ba253e5f7aa5_bolivar-footylogos.svg',
+  'the strongest':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/693ac95266c6ab52e3d923a7_the-strongest-footylogos.png',
+  'pakhtakor tashkent':'https://assets.football-logos.cc/logos/uzbekistan/256x256/pakhtakor.164780f3.png',
+  'slavia praha':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fe4c9857646735ec1a385a_slavia-praha-footballlogos-org.svg',
+  'viktoria plzen':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fe4bd6ce908baaecc4c879_viktoria-plzen-footballlogos-org.svg',
+  'sparta praha':'https://media.api-sports.io/football/teams/628.png',
+  'lech poznan':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f9046ba34009cafd08b345_lech-poznan-footballlogos-org.svg',
+  'legia warszawa':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f90440219dd7ef746c2ca3_legia-warszawa-footballlogos-org.svg',
+  'ferencvarosi':'https://media.api-sports.io/football/teams/651.png',
+  'cfr cluj':'https://assets.football-logos.cc/logos/romania/256x256/cfr-cluj.a51406a7.png',
+  'fcsb':'https://r2.thesportsdb.com/images/media/team/badge/123g021759420850.png',
+  'dinamo zagreb':'https://r2.thesportsdb.com/images/media/team/badge/araidi1579955395.png',
+  'hajduk split':'https://assets.football-logos.cc/logos/croatia/256x256/hajduk-split.90d7fece.png',
+  'shamrock rovers':'https://r2.thesportsdb.com/images/media/team/badge/u1zowj1491504381.png',
+  'dundalk':'https://r2.thesportsdb.com/images/media/team/badge/uzyrla1770290793.png',
+  'maribor':'https://assets.football-logos.cc/logos/slovenia/256x256/maribor.98cb3bef.png',
+  'olimpija ljubljana':'https://r2.thesportsdb.com/images/media/team/badge/zsigfn1534874586.png',
+  'flora tallinn':'https://r2.thesportsdb.com/images/media/team/badge/2m6xuv1769308039.png',
+  'zalgiris vilnius':'https://assets.football-logos.cc/logos/lithuania/256x256/zalgiris-vilnius.786de503.png',
+  'pyunik yerevan':'https://r2.thesportsdb.com/images/media/team/badge/h8jwvd1579003944.png',
+  'neftchi baku':'https://media.api-sports.io/football/teams/2270.png',
+  'sabah fk':'https://assets.football-logos.cc/logos/azerbaijan/256x256/sabah.020bde4e.png',
+  'bate borisov':'https://r2.thesportsdb.com/images/media/team/badge/qaoq0g1626731373.png',
+  'dinamo minsk':'https://apiv2.allsportsapi.com/logo/247_dinamo-minsk.jpg',
+  'melbourne victory':'https://r2.thesportsdb.com/images/media/team/badge/wwvsqx1473454564.png',
+  'sydney fc':'https://static.flashscore.com/res/image/data/40aWoCil-WU4sOyqK.png',
+  'western sydney wanderers fc':'https://assets.football-logos.cc/logos/australia/256x256/western-sydney-wanderers.a3fe8f18.png',
+  'kairat almaty':'https://media.api-sports.io/football/teams/664.png',
+  'selangor':'https://r2.thesportsdb.com/images/media/team/badge/uhcda31583335092.png',
+  'johor darul takzim':'https://media.api-sports.io/football/teams/2787.png',
+  'coventry city':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6abde1cbf56d55eba6a5b_coventry-city-footballlogos-org.svg',
+  'leicester city':'https://r2.thesportsdb.com/images/media/team/badge/xtxwtu1448813356.png',
+  'sheffield united':'https://r2.thesportsdb.com/images/media/team/badge/w7f8pj1672950689.png',
+  'middlesbrough':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6aa4ac7b990d3a93e09e8_middlesbrough-footballlogos-org.svg',
+  'norwich city':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6aa6991abdac7a8ff5365_norwich-city-footballlogos-org.svg',
+  'watford':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6aa08d7a0acb7993998c5_watford-footballlogos-org.svg',
+  'swansea city':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6aa8d6109f2dd89f58b44_swansea-city-footballlogos-org.svg',
+  'cardiff city':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6aab28ddf989488b67c30_cardiff-city-footballlogos-org.svg',
+  'blackburn rovers':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6aaf40eebf2261e3b7204_blackburn-rovers-footballlogos-org.svg',
+  'ipswich town':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fd4ee5641540b54817b984_ipswich-town-footballlogos-org.svg',
+  'southampton':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fd50f34efeaf17e659e318_southampton-footballlogos-org.svg',
+  'hull city':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6ab55852999ffa54dc452_hull-city-footballlogos-org.svg',
+  'birmingham city':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6ac928575f3a07b1d67db_birmingham-city-footballlogos-org.svg',
+  'oxford united':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fd5068bcf5fbdf17517b73_oxford-united-footballlogos-org.svg',
+  'portsmouth':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6ac4ea3159a00eaf3709c_portsmouth-footballlogos-org.svg',
+  'derby county':'https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68f6acb46a1f998d80536490_derby-county-footballlogos-org.svg'
+};
+
+let teamLogoCache = {};
+
+function escapeHtml(s){if(!s)return '';return s.replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));}
+
+function generateSVGLogo(n){
+    let w=n.replace(/[^a-zA-Z\s]/g,' ').trim().split(/\s+/).filter(x=>x.length);
+    let i=w.map(x=>x[0].toUpperCase()).join('').substring(0,3)||'TM';
+    let cols=['#cc0000','#990000','#aa2200'];
+    let h=0; for(let c of n) h=n.charCodeAt(n.indexOf(c))+((h<<5)-h);
+    let col=cols[Math.abs(h)%cols.length];
+    let svg=`<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120"><defs><radialGradient id="g" cx="40%" cy="35%"><stop offset="0%" stop-color="#ff4400"/><stop offset="100%" stop-color="${col}"/></radialGradient></defs><circle cx="60" cy="60" r="56" fill="url(#g)" stroke="#fff" stroke-width="3"/><circle cx="60" cy="60" r="56" fill="none" stroke="rgba(255,200,150,0.3)" stroke-width="1"/><text x="50%" y="56%" text-anchor="middle" fill="#fff" font-size="34" font-weight="900" font-family="Arial" dy=".3em" style="text-shadow:0 2px 4px #000">${i}</text></svg>`;
+    return 'data:image/svg+xml;base64,'+btoa(svg);
+}
+
+function getTeamLogoUrl(n){
+    let k=n.toLowerCase().trim();
+    if(teamLogoCache[k])return teamLogoCache[k];
+    let u=FALLBACK_LOGOS[k];
+    if(!u){let c=k.replace(/[^a-z0-9]/g,'');for(let fk in FALLBACK_LOGOS){if(fk.replace(/[^a-z0-9]/g,'')=== c){u=FALLBACK_LOGOS[fk];break;}}}
+    if(!u)u=generateSVGLogo(n);
+    teamLogoCache[k]=u; return u;
+}
+
+function parseMatchLine(line){
+    let t=line.trim();
+    if(!/\bv\.?s\.?\b/i.test(t))return null;
+    let d='',ti='',t1='',t2='',s1='',s2='';
+    let sr=/\b(\d{1,2})\s*[:\-\u2013\u2014]\s*(\d{1,2})\s*$/,sm=t.match(sr);
+    if(sm){s1=sm[1];s2=sm[2];t=t.substring(0,sm.index).trim();}
+    let dr=/^(\d{1,2}[\/\-]\d{1,2})(?:\s+(\d{1,2}[:.]\d{2})(?:\s+(WIB|WITA|WIT))?)?/i,dm=t.match(dr);
+    if(dm){d=dm[1].replace('-','/');if(dm[2]){ti=dm[2].replace('.',':');if(dm[3])ti+=' '+dm[3].toUpperCase();}t=t.substring(dm[0].length).trim();}
+    let vr=/^(.+?)\s+v\.?s\.?\s+(.+)$/i,vm=t.match(vr);
+    if(!vm)return null;
+    t1=vm[1].trim();t2=vm[2].trim();
+    if(!t1||!t2)return null;
+    if(s1===''){s1='-';s2='-';}
+    return{date:d||'-',time:ti||'-',team1:t1,team2:t2,score1:s1,score2:s2};
+}
+
+function parseAll(input){
+    let lines=input.split('\n').filter(l=>l.trim()!=='');
+    let result=[],cur=null,matches=[];
+    for(let line of lines){
+        let m=parseMatchLine(line);
+        if(!m){if(cur&&matches.length)result.push({name:cur,matches:matches.slice()});cur=line;matches=[];}
+        else{if(cur)matches.push(m);}
+    }
+    if(cur&&matches.length)result.push({name:cur,matches:matches.slice()});
+    return result;
+}
+
+function getAllTeams(l){let s=new Set();l.forEach(x=>x.matches.forEach(m=>{s.add(m.team1);s.add(m.team2);}));return Array.from(s);}
+
+window.filterLeaguePreview=function(v){document.querySelectorAll('#previewTables .prev-league-block').forEach(b=>b.style.display=(v==='all'||b.getAttribute('data-league')===v)?'':'none');};
+
+function renderPreview(leagues){
+    let td=document.getElementById('previewTables'),ed=document.getElementById('previewEmpty'),fw=document.getElementById('leagueFilterWrap');
+    if(!leagues.length){td.innerHTML='';ed.style.display='block';fw.style.display='none';return;}
+    ed.style.display='none';fw.style.display='block';
+    let h='';
+    leagues.forEach(lg=>{
+        let n=escapeHtml(lg.name);
+        h+=`<div class="prev-league-block" data-league="${n.replace(/"/g,'&quot;')}"><div class="prev-league-crown"><div class="prev-crown-name">🏆 ${n} 🏆</div></div>`;
+        lg.matches.forEach(m=>{
+            let l1=getTeamLogoUrl(m.team1),l2=getTeamLogoUrl(m.team2);
+            h+=`<div class="prev-match-card"><div class="team-side left"><img class="team-logo-preview" src="${l1}" alt="${escapeHtml(m.team1)}"><span class="team-name">${escapeHtml(m.team1)}</span></div><div class="score-center"><div class="score-num">${m.score1} : ${m.score2}</div><div class="match-dt">${m.date}<br>${m.time}</div></div><div class="team-side right"><img class="team-logo-preview" src="${l2}" alt="${escapeHtml(m.team2)}"><span class="team-name">${escapeHtml(m.team2)}</span></div></div>`;
+        });
+        h+=`</div>`;
+    });
+    td.innerHTML=h;
+    let sel=document.getElementById('leagueSelect');
+    sel.innerHTML='<option value="all">🏆 Semua Liga</option>';
+    leagues.forEach(l=>{let o=document.createElement('option');o.value=l.name;o.textContent='🏆 '+l.name;sel.appendChild(o);});
+    sel.value='all';filterLeaguePreview('all');
+}
+
+function buildOutputHTML(leagues){
+    let autoDate=document.getElementById('autoDate').innerText;
+    let cfg=SITE_CONFIG;
+    let blocks='';
+    leagues.forEach(lg=>{
+        let n=escapeHtml(lg.name);
+        blocks+=`<div class="league-block" data-league="${n.replace(/"/g,'&quot;')}"><div class="league-crown"><div class="crown-name">🏆 ${n} 🏆</div></div>`;
+        lg.matches.forEach((m,i)=>{
+            let l1=getTeamLogoUrl(m.team1),l2=getTeamLogoUrl(m.team2);
+            blocks+=`<div class="match-card ${i%2===0?'even':'odd'}"><div class="team-side left"><img class="tl" src="${l1}" alt="${escapeHtml(m.team1)}"><span class="tn">${escapeHtml(m.team1)}</span></div><div class="sc"><div class="sn">${m.score1} : ${m.score2}</div><div class="dt">${m.date}<br>${m.time}</div></div><div class="team-side right"><img class="tl" src="${l2}" alt="${escapeHtml(m.team2)}"><span class="tn">${escapeHtml(m.team2)}</span></div></div>`;
+        });
+        blocks+=`</div>`;
+    });
+    let sel=leagues.map(l=>`<option value="${escapeHtml(l.name).replace(/"/g,'&quot;')}">🏆 ${escapeHtml(l.name)}</option>`).join('');
+    let css=`<style>
+@keyframes rgb{0%{border-color:#f00;box-shadow:0 0 20px #f00,0 0 50px #f0000044}12%{border-color:#f70;box-shadow:0 0 20px #f70}24%{border-color:#ff0;box-shadow:0 0 20px #ff0}36%{border-color:#0f0;box-shadow:0 0 20px #0f0}48%{border-color:#0ff;box-shadow:0 0 20px #0ff}60%{border-color:#07f;box-shadow:0 0 20px #07f}72%{border-color:#a0f;box-shadow:0 0 20px #a0f}84%{border-color:#f0f;box-shadow:0 0 20px #f0f}100%{border-color:#f00;box-shadow:0 0 20px #f00}}
+@keyframes rgbT{0%{color:#ff5555;text-shadow:0 0 10px #f00}16%{color:#ffff55;text-shadow:0 0 10px #ff0}33%{color:#55ff88;text-shadow:0 0 10px #0f0}50%{color:#55ffff;text-shadow:0 0 10px #0ff}66%{color:#5588ff;text-shadow:0 0 10px #07f}83%{color:#ff55ff;text-shadow:0 0 10px #f0f}100%{color:#ff5555;text-shadow:0 0 10px #f00}}
+@keyframes rl{0%{background:linear-gradient(90deg,#f00,#f70,#ff0,#0f0,#0ff,#07f,#a0f,#f0f,#f00)}50%{background:linear-gradient(90deg,#f0f,#a0f,#07f,#0ff,#0f0,#ff0,#f70,#f00,#f0f)}100%{background:linear-gradient(90deg,#f00,#f70,#ff0,#0f0,#0ff,#07f,#a0f,#f0f,#f00)}}
+@keyframes sh{0%{background-position:-300% center}100%{background-position:300% center}}
+@keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+@keyframes rBg{0%{transform:rotate(0deg) scale(1.15)}100%{transform:rotate(360deg) scale(1.15)}}
+@keyframes grd{0%{background-position:0 0}100%{background-position:60px 60px}}
+@keyframes pl{0%,100%{opacity:.07;filter:blur(18px) drop-shadow(0 0 50px #f00)}50%{opacity:.14;filter:blur(12px) drop-shadow(0 0 90px #f60)}}
+@keyframes sc{0%{top:-10%}100%{top:110%}}
+@keyframes f3d{0%,100%{transform:translateY(0) rotateX(0)}50%{transform:translateY(-8px) rotateX(2deg)}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#1a0000;font-family:'Poppins',sans-serif;color:#f0f0f0;overflow-x:hidden;min-height:100vh;position:relative}
+.bg-r{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.bg-r::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,#8b0000,transparent 65%),radial-gradient(ellipse 60% 40% at 10% 100%,#6b0000,transparent 60%),radial-gradient(ellipse 100% 100% at 50% 50%,#2d0000,#0d0000 70%,#000 100%);animation:rBg 40s linear infinite}
+.bg-r::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,0,0,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,0,0,.05) 1px,transparent 1px);background-size:60px 60px;animation:grd 8s linear infinite}
+.sc-line{position:fixed;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(255,80,80,.15),rgba(255,200,200,.2),rgba(255,80,80,.15),transparent);z-index:1;pointer-events:none;animation:sc 6s linear infinite}
+.wm{position:fixed;top:50%;left:50%;width:70vmin;height:70vmin;transform:translate(-50%,-50%);z-index:1;pointer-events:none;background:url('${cfg.logo}') center/contain no-repeat;opacity:.07;filter:blur(16px) drop-shadow(0 0 60px #f00);animation:pl 5s ease-in-out infinite}
+.wrap{position:relative;z-index:2;padding:20px 14px 50px;max-width:600px;margin:0 auto}
+.rgb-s{height:5px;width:100%;animation:rl 1.8s linear infinite;box-shadow:0 0 10px rgba(255,100,0,.4)}
+.logo-box{text-align:center;padding:26px 20px 20px;border:3px solid #f00;border-radius:24px;margin-bottom:14px;animation:rgb 4s linear infinite;background:linear-gradient(135deg,rgba(130,0,0,.88),rgba(50,0,0,.95));box-shadow:0 12px 50px #00000099,inset 0 1px 0 rgba(255,150,100,.18);position:relative;overflow:hidden}
+.logo-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(255,80,0,.18),transparent 70%)}
+.logo-wrap{display:inline-block;animation:f3d 4s ease-in-out infinite;position:relative}
+.logo-wrap img{max-width:200px;filter:drop-shadow(0 0 28px #f00) drop-shadow(0 0 60px rgba(255,0,0,.4)) drop-shadow(0 10px 20px rgba(0,0,0,.8))}
+.logo-wrap::after{content:'';position:absolute;bottom:-16px;left:15%;right:15%;height:12px;background:radial-gradient(ellipse,rgba(255,0,0,.4),transparent 70%);filter:blur(6px)}
+.site-title{font-family:'Orbitron',monospace;font-size:1.7rem;font-weight:900;background:linear-gradient(135deg,#fff8f0,#ffddcc,#ff6600,#ffcc00,#fff8f0);background-size:300% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 3s linear infinite;letter-spacing:3px;margin-top:10px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.8))}
+.sub{font-size:.75rem;animation:rgbT 4s linear infinite;font-weight:600;letter-spacing:2px;margin-top:4px}
+.date-box{text-align:center;margin:10px 0;padding:14px;border:2px solid #f00;border-radius:16px;background:linear-gradient(135deg,rgba(100,0,0,.85),rgba(50,0,0,.92));animation:rgb 5s linear infinite;box-shadow:0 8px 30px #00000077,inset 0 1px 0 rgba(255,150,100,.15);font-weight:700;animation:rgb 5s linear infinite,rgbT 3s linear infinite}
+.mq-wrap{overflow:hidden;white-space:nowrap;margin:10px 0;border:2px solid #f00;border-radius:14px;background:linear-gradient(90deg,rgba(80,0,0,.85),rgba(120,0,0,.7),rgba(80,0,0,.85));padding:12px 0;animation:rgb 4s linear infinite}
+.mq-inner{display:inline-block;animation:rgbT 3s linear infinite,mq 38s linear infinite;padding-left:100%;font-weight:800;font-size:.85rem}
+.f-wrap{margin:10px 0;text-align:center}
+.fsel{padding:10px 18px;background:linear-gradient(135deg,rgba(100,0,0,.8),rgba(50,0,0,.9));border:2px solid #f00;border-radius:40px;color:#ffaaaa;font-weight:700;animation:rgb 4s linear infinite;outline:none;box-shadow:0 4px 16px #00000055}
+.league-block{margin:10px 0;border:2px solid #f00;border-radius:16px;overflow:hidden;animation:rgb 4s linear infinite;box-shadow:0 6px 28px #00000077,0 2px 0 rgba(255,100,50,.2)}
+.league-crown{background:linear-gradient(135deg,rgba(160,0,0,.95),rgba(70,0,0,.98));padding:10px;text-align:center;border-bottom:2px solid #f00}
+.crown-name{font-weight:900;animation:rgbT 3s linear infinite;font-size:.82rem;letter-spacing:1px}
+.match-card{display:flex;align-items:center;padding:9px 12px;border-bottom:1px solid rgba(255,0,0,.1);background:rgba(40,0,0,.5);transition:all .2s}
+.match-card:last-child{border-bottom:none}
+.match-card.odd{background:rgba(60,0,0,.4)}
+.match-card:hover{background:rgba(150,0,0,.3);transform:translateX(2px)}
+.team-side{flex:1;display:flex;align-items:center;gap:7px}
+.team-side.right{flex-direction:row-reverse}
+.tl{width:36px;height:36px;object-fit:contain;filter:drop-shadow(0 0 5px rgba(255,100,0,.5)) drop-shadow(0 2px 4px rgba(0,0,0,.7));border-radius:50%}
+.tn{font-size:.7rem;font-weight:600;color:#ffe8e8}
+.sc{width:78px;text-align:center}
+.sn{font-weight:900;font-size:1.05rem;animation:rgbT 3s linear infinite;filter:drop-shadow(0 1px 4px rgba(0,0,0,.8))}
+.dt{font-size:.59rem;color:#cc8888;margin-top:2px}
+</style>`;
+    return `<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prediksi Bola - ANGKABET</title><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">${css}</head><body>
+<div class="bg-r"></div>
+<div class="sc-line"></div>
+<div class="wm"></div>
+<div class="wrap">
+<div class="rgb-s"></div>
+<div class="logo-box">
+<div class="logo-wrap"><img src="${cfg.logo}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" alt="ANGKABET"><span style="display:none;font-family:'Orbitron',monospace;font-size:2rem;font-weight:900;background:linear-gradient(135deg,#fff,#f60,#fc0,#fff);background-size:300% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 3s linear infinite;letter-spacing:4px">ANGKABET</span></div>
+<div class="site-title">ANGKABET</div>
+<div class="sub">⚡ PREDIKSI BOLA TERPERCAYA ⚡</div>
+</div>
+<div class="date-box">📅 ${autoDate}</div>
+<div class="mq-wrap"><div class="mq-inner">${cfg.marquee} &nbsp;&nbsp;&nbsp;&nbsp; ${cfg.marquee}</div></div>
+<div class="f-wrap"><select class="fsel" id="lf" onchange="fl(this.value)"><option value="all">🏆 Semua Liga</option>${sel}</select></div>
+<div class="rgb-s"></div>
+${blocks}
+<div class="rgb-s"></div>
+</div>
+<script>function fl(v){document.querySelectorAll('.league-block').forEach(b=>b.style.display=(v==='all'||b.dataset.league===v)?'':'none');}<\/script>
+</body></html>`;
+}
+
+function handleInput(){
+    let input=document.getElementById('inputText').value.trim();
+    if(!input){
+        document.getElementById('outputCode').innerText='Script HTML lengkap akan muncul di sini secara otomatis...';
+        document.getElementById('previewTables').innerHTML='';
+        document.getElementById('previewEmpty').style.display='block';
+        document.getElementById('leagueFilterWrap').style.display='none';
+        ['totalLeagues','totalMatches','totalLogos'].forEach(id=>document.getElementById(id).innerText='0');
+        return;
+    }
+    let leagues=parseAll(input);
+    if(!leagues.length)return;
+    let allTeams=getAllTeams(leagues);
+    let tot=leagues.reduce((a,l)=>a+l.matches.length,0);
+    document.getElementById('totalLeagues').innerText=leagues.length;
+    document.getElementById('totalMatches').innerText=tot;
+    let ok=0;allTeams.forEach(t=>{let u=getTeamLogoUrl(t);if(u&&!u.startsWith('data:image/svg'))ok++;});
+    document.getElementById('totalLogos').innerText=ok;
+    renderPreview(leagues);
+    document.getElementById('outputCode').innerText=buildOutputHTML(leagues);
+}
+
+function refreshAllLogos(){teamLogoCache={};handleInput();showNotif('🔄 Logo disegarkan!');}
+function clearInput(){document.getElementById('inputText').value='';handleInput();showNotif('✓ Input berhasil dibersihkan!');}
+function copyToClipboard(){
+    let o=document.getElementById('outputCode').innerText;
+    if(o.startsWith('Script HTML')||o.length<100){showNotif('⚠️ Belum ada script!');return;}
+    navigator.clipboard.writeText(o).then(()=>showNotif('✓ Script berhasil dicopy!')).catch(()=>{let t=document.createElement('textarea');t.value=o;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);showNotif('✓ Script berhasil dicopy!');});
+}
+function showNotif(msg){
+    let n=document.createElement('div');n.className='notification';n.innerHTML='<i class="fas fa-bell"></i> '+msg;
+    document.body.appendChild(n);setTimeout(()=>n.remove(),3000);
+}
+function setAutoDate(){
+    let t=new Date(),t2=new Date(t);t2.setDate(t.getDate()+1);
+    let d1=t.toLocaleDateString('id-ID',{day:'numeric',month:'long'});
+    let d2=t2.toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'});
+    let ds=d1+' - '+d2;
+    document.getElementById('autoDate').innerText=ds;
+    document.getElementById('previewDate').innerText=ds;
+}
+
+window.addEventListener('DOMContentLoaded',()=>{
+    setAutoDate();
+    handleInput();
+    document.getElementById('clearBtn').addEventListener('click',clearInput);
+    document.getElementById('refreshLogoBtn').addEventListener('click',refreshAllLogos);
+    document.getElementById('copyBtn').addEventListener('click',copyToClipboard);
+    document.getElementById('inputText').addEventListener('input',handleInput);
+    // RGB Particles
+    let pc=document.getElementById('particlesPrediksi');
+    let pColors=['rgba(255,0,0,0.35)','rgba(200,0,0,0.25)','rgba(255,80,0,0.3)','rgba(180,0,0,0.2)','rgba(255,40,40,0.25)','rgba(120,0,0,0.3)'];
+    for(let i=0;i<55;i++){
+        let p=document.createElement('div');
+        p.classList.add('particle-prediksi');
+        p.style.cssText=`background:${pColors[i%pColors.length]};width:${Math.random()*8+2}px;height:${Math.random()*8+2}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*12}s;animation-duration:${Math.random()*16+10}s;box-shadow:0 0 ${Math.random()*10+4}px rgba(255,0,0,0.3);`;
+        pc.appendChild(p);
+    }
+});
+</script>
+</body>
+</html>
